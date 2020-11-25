@@ -31,7 +31,7 @@ else:
 
 setup(
         name="PyPDF2",
-        version=verstr,
+        version="1.26.0",
         description="PDF toolkit",
         long_description=long_description,
         author="Mathieu Fenniak",
