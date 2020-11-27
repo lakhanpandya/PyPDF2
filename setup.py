@@ -1,39 +1,12 @@
 #!/usr/bin/env python
 
 from distutils.core import setup
-import re
-
-long_description = """
-A Pure-Python library built as a PDF toolkit.  It is capable of:
-
-- extracting document information (title, author, ...)
-- splitting documents page by page
-- merging documents page by page
-- cropping pages
-- merging multiple pages into a single page
-- encrypting and decrypting PDF files
-- and more!
-
-By being Pure-Python, it should run on any Python platform without any
-dependencies on external libraries.  It can also work entirely on StringIO
-objects rather than file streams, allowing for PDF manipulation in memory.
-It is therefore a useful tool for websites that manage or manipulate PDFs.
-"""
-
-VERSIONFILE="PyPDF2/_version.py"
-verstrline = open(VERSIONFILE, "rt").read()
-VSRE = r"^__version__ = ['\"]([^'\"]*)['\"]"
-mo = re.search(VSRE, verstrline, re.M)
-if mo:
-    verstr = mo.group(1)
-else:
-    raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE))
 
 setup(
         name="PyPDF2",
         version="1.26.0",
         description="PDF toolkit",
-        long_description=long_description,
+        long_description="pypdf2",
         author="Mathieu Fenniak",
         author_email="biziqe@mathieu.fenniak.net",
         maintainer="Phaseit, Inc.",
